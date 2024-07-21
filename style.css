@@ -35,8 +35,7 @@ body {
 
 .main {
   flex: 1 1 auto;
-  /* background-color: #d6d6d6; */
-  background-color: red;
+  background-color: #d6d6d6;
 }
 
 .section-code {
