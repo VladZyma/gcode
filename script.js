@@ -1,8 +1,6 @@
 'use strict';
-// reading file form computer
 const codeInputUpload = document.querySelector('.code__input-upload');
 const codeInputCopies = document.querySelector('.code__input-copies');
-// const codeInputAdd = document.querySelector('.code__input-add');
 const codeTextareaAdd = document.querySelector('.code__textarea-add');
 const codePreviewBox = document.querySelector('.code__preview');
 const downloadCodeBtn = document.querySelector('.code__download-btn');
@@ -10,15 +8,9 @@ const downloadCodeBtn = document.querySelector('.code__download-btn');
 codeInputUpload.addEventListener('change', function (e) {
   const uploadedCode = e.target.files[0];
   const copies = codeInputCopies.value;
-  // const codeToAdd = codeInputAdd.value;
 
   const textArea = codeTextareaAdd.value;
   console.log(textArea);
-
-  // const codeToAddStr = codeToAdd
-  //   .split('/')
-  //   .map(str => str + '\n')
-  //   .join('');
 
   const fileReader = new FileReader();
   fileReader.readAsText(uploadedCode);
