@@ -13,7 +13,17 @@
     <div class="layout">
       <header class="header">
         <div class="container">
-          <h2 class="title">Bro Code</h2>
+          <div class="header__raw">
+            <div class="header__logo-box">
+              <img class="header__logo-img" src="./hulk.png" alt="the Hulk" />
+            </div>
+
+            <h2 class="title">Bro Code</h2>
+
+            <div class="header__logo-box">
+              <img class="header__logo-img" src="./hulk.png" alt="the Hulk" />
+            </div>
+          </div>
         </div>
       </header>
 
@@ -23,13 +33,19 @@
             <div class="code__wrapper">
               <label class="code__label-copies">
                 Code copies:
-                <input class="code__input-copies" type="number" value="1" />
+                <input
+                  class="code__input-copies"
+                  type="number"
+                  value="1"
+                  min="1"
+                />
               </label>
 
               <label class="code__label-add">
-                Add code:
-                <!-- <input class="code__input-add" type="text" /> -->
-                <textarea class="code__textarea-add"></textarea>
+                <textarea
+                  class="code__textarea-add"
+                  placeholder="Enter code to add"
+                ></textarea>
               </label>
 
               <label class="code__label-upload">
