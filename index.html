@@ -30,32 +30,33 @@
       <main class="main">
         <section class="section-code code">
           <div class="container">
-            <div class="code__wrapper">
-              <label class="code__label-copies">
-                Code copies:
-                <input
-                  class="code__input-copies"
-                  type="number"
-                  value="1"
-                  min="1"
-                />
-              </label>
+            <div class="code__wrapper grid">
+              <div class="grid__col-left">
+                <label class="code__label-copies">
+                  Code copies:
+                  <input
+                    class="code__input-copies"
+                    type="number"
+                    value="1"
+                    min="1"
+                  />
+                </label>
+                <label class="code__label-add">
+                  <textarea
+                    class="code__textarea-add"
+                    placeholder="Enter code to add"
+                  ></textarea>
+                </label>
+                <label class="code__label-upload">
+                  UPLOAD CODE 🤖
+                  <input class="code__input-upload" type="file" />
+                </label>
+              </div>
 
-              <label class="code__label-add">
-                <textarea
-                  class="code__textarea-add"
-                  placeholder="Enter code to add"
-                ></textarea>
-              </label>
-
-              <label class="code__label-upload">
-                UPLOAD CODE 🤖
-                <input class="code__input-upload" type="file" />
-              </label>
-
-              <pre class="code__preview"></pre>
-
-              <button class="code__download-btn">DOWNLOAD CODE 🤖</button>
+              <div class="grid__col-right">
+                <pre class="code__preview"></pre>
+                <button class="code__download-btn">DOWNLOAD CODE 🤖</button>
+              </div>
             </div>
           </div>
         </section>
